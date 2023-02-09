@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine's Day</title>
+  <style>
+    #noButton {
+      position: absolute;
+    }
+  </style>
+  <script>
+    function moveNoButton() {
+      var noButton = document.getElementById("noButton");
+      noButton.style.left = (Math.random() * 400) + "px";
+      noButton.style.top = (Math.random() * 400) + "px";
+    }
+  </script>
+</head>
+<body>
+  <h1>Will you be my valentine?</h1>
+  <button id="yesButton" onclick="alert('I really like you Angela, thank you so much for saying yes!')">Yes</button>
+  <button id="noButton" onclick="moveNoButton()">No</button>
+</body>
+</html>
